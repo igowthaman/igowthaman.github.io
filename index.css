@@ -1,0 +1,50 @@
+.welcome-bottom{
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.bg-dark-light{
+    background-color: rgb(94, 94, 94);
+}
+
+.welcome-text::after{
+    text-align: center;
+    animation: text-animation 6s infinite;
+    content: "Welcome";
+}
+
+.rounded-5{
+    border: 0px;
+    border-radius: .5em;
+}
+
+@keyframes text-animation {
+    0%   {
+        opacity:0;
+        width: 50;
+        content: "Hi, There";
+    }
+    40% {
+        opacity:1;
+        width: 100;
+        content: "Hi, There";
+    }
+    55%{
+        opacity: 0;
+        content: "Hi, There";
+    }
+    60%{
+        opacity:0;
+        width: 50;
+        content: "Welcome";
+    }
+    90% {
+        opacity:1;
+        width: 100;
+        content: "Welcome";
+    }
+    100%{
+        opacity: 0;
+        content: "Welcome";
+    }
+  }
