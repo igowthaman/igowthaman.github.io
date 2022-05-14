@@ -1,0 +1,4 @@
+- 👋 Hi, I’m gowthaman
+- 👀 I’m interested in application development and artificial intelligence.
+- 🌱 I’m currently learning mobile application development.
+- 📫 You can reach me at ksgowthaman9462@gmail.com
