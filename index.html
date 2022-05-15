@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Portfolio</title>
 </head>
-<body style="height: 100vh;">
+<body style="height: 100vh;" class="hide-scroll">
     <div class="container-fluid h-100 bg-dark-light">
         <div class="row h-50 bg-dark welcome-bottom animate__animated" id="welcome">
             <div class="col-10 m-auto rounded-4 text-light text-center pt-4 h1 m-auto">
@@ -28,25 +28,32 @@
                 </div>
             </div>
         </div>
-        <div class="row d-none animate__animated p-4 m-auto " id="main">
-            <div class="col-md-8 bg-dark text-light text-center m-auto rounded-5 p-2">
-                <div class="m-auto">
-                    <div class="h3 p-1">Hi,</div>
-                    <div class="h2 p-2">My name is Gowthaman </div>
+        <div class="row d-none animate__animated p-4 m-auto h-100" id="main">
+            <div class="col-md-6 bg-dark text-light text-center m-auto rounded-5 p-2 align-middle">
+                <div class="m-auto py-5">
+                    <div class="h3 p-1">Hello,</div>
+                    <div class="h2 p-2">I am Gowthaman </div>
                     <div class="h4 p-2">Software Developer</div>
                     <div class="h5 p-2">
                         <div class="d-flex justify-content-center m-auto">
                             <div class="p-2">
-                                <a href="https://www.linkedin.com/in/gowthaman-k-s-272960200/" class="text-light fs-2">
+                                <a href="https://www.linkedin.com/in/gowthaman-k-s-272960200/" class="text-light fs-2" target="_blank">
                                     <i class="bi bi-linkedin"></i>
                                 </a>
                             </div>
                             <div class="p-2">
-                                <a href="https://github.com/GOWTHAMAN9462" class="text-light fs-2">
+                                <a href="https://github.com/GOWTHAMAN9462" class="text-light fs-2" target="_blank">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="m-auto w-50 pt-2">
+                        <button class="text-light btn fs-1 animate__animated animate__fadeIn" onclick="close_welcome()" >
+                            <div class="animate__animated animate__infinite animate__heartBeat">
+                                <i class="bi bi-arrow-down-circle"></i>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
