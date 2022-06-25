@@ -1,5 +1,5 @@
 - 👋 Hi, I’m gowthaman
-- 👀 This is my portfolio using HTML, CSS , JavaScript and Bootstrap
+- 👀 This is my portfolio
 - 🌱 I’m currently learning mobile application development.
-- 📫 You can reach me at ksgowthaman9462@gmail.com
-- 🔗 My Linkedin profile https://www.linkedin.com/in/gowthaman-k-s-272960200/
+- 📫 You can reach me at gowthamanks17@gmail.com
+- 🔗 My Linkedin profile https://www.linkedin.com/in/igowthaman/
