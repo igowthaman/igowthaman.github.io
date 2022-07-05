@@ -1,15 +1,21 @@
+body{
+    background-color: Linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));;
+}
+::selection{
+    color: rgb(255, 0, 0);
+}
 .welcome-bottom{
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
 }
 
 .bg-dark-light{
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(255, 255, 255);
 }
 
 .welcome-text::after{
     text-align: center;
-    animation: text-animation 6s infinite;
+    animation: text-animation 4s;
     content: "Welcome";
 }
 
@@ -24,7 +30,7 @@
         width: 50;
         content: "Hi, There";
     }
-    40% {
+    50% {
         opacity:1;
         width: 100;
         content: "Hi, There";
@@ -38,13 +44,8 @@
         width: 50;
         content: "Welcome";
     }
-    90% {
-        opacity:1;
-        width: 100;
-        content: "Welcome";
-    }
     100%{
-        opacity: 0;
+        opacity: 1;
         content: "Welcome";
     }
   }
@@ -52,9 +53,12 @@
   .hide-scroll::-webkit-scrollbar {
     display: none;
   }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
+
   .hide-scroll {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  }
+
+  .link:hover{
+    text-decoration: underline;
   }
