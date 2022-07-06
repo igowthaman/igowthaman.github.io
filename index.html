@@ -20,45 +20,55 @@
         <div class="row animate__animated animate__fadeIn p-4 m-auto h-100" id="home">
             <div class="col-md-9 col-xl-7 col-12 mx-auto mt-5 pt-5 rounded-5 p-2 align-middle position-relative">
                 <div class="row">
-                    <nav class="bg-light border border-dark border-2 rounded-5 position-fixed bottom-0 mb-2 shadow col-md-8 col-xl-7 col-10"
+                    <nav class="x position-fixed bottom-0 col-md-8 col-xl-7 col-10"
                         style="background-color:white;">
+                        <div class=" d-flex justify-content-evenly shadow-lg p-1">
+                        </div>
                         <div class="d-flex justify-content-evenly p-2">
-                            <a class="btn" href="#home">
+                            <a class="btn" href="#home" onclick="select('home')">
                                 <div class="fs-5 fw-bold">
-                                    <span class="d-none d-md-inline">Home </span>
-                                    <span class="material-symbols-outlined d-inline d-md-none">
+                                    <span class="d-none d-lg-inline selected"  id="home-name">Home </span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none selected" id="home-btn">
                                         home
                                     </span>
                                 </div>
                             </a>
-                            <a class="btn" href="#education">
+                            <a class="btn" href="#education" onclick="select('education')">
                                 <div class="fs-5 fw-bold">
-                                    <span class="d-none d-md-inline">Education</span>
-                                    <span class="material-symbols-outlined d-inline d-md-none">
+                                    <span class="d-none d-lg-inline"  id="education-name">Education</span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="education-btn">
                                         school
                                     </span>
                                 </div>
                             </a>
-                            <a class="btn" href="#experience">
+                            <a class="btn" href="#expertise" onclick="select('expertise')">
                                 <div class="fs-5 fw-bold">
-                                    <span class="d-none d-md-inline">Experience</span>
-                                    <span class="material-symbols-outlined d-inline d-md-none">
-                                        manage_accounts
+                                    <span class="d-none d-lg-inline" id="expertise-name">Expertise</span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="expertise-btn">
+                                        engineering
                                     </span>
                                 </div>
                             </a>
-                            <a class="btn" href="#project">
+                            <a class="btn" href="#experience" onclick="select('experience')">
                                 <div class="fs-5 fw-bold">
-                                    <span class="d-none d-md-inline">Project</span>
-                                    <span class="material-symbols-outlined d-inline d-md-none">
+                                    <span class="d-none d-lg-inline" id="experience-name">Experience</span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="experience-btn">
+                                        work_history
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="btn" href="#project" onclick="select('project')">
+                                <div class="fs-5 fw-bold">
+                                    <span class="d-none d-lg-inline"  id="project-name">Project</span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="project-btn">
                                         collections_bookmark
                                     </span>
                                 </div>
                             </a>
-                            <a class="btn" href="#contact">
+                            <a class="btn" href="#contact" onclick="select('contact')">
                                 <div class="fs-5 fw-bold">
-                                    <span class="d-none d-md-inline">Contact</span>
-                                    <span class="material-symbols-outlined d-inline d-md-none">
+                                    <span class="d-none d-lg-inline " id="contact-name">Contact</span>
+                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="contact-btn">
                                         call
                                     </span>
                                 </div>
@@ -82,26 +92,26 @@
                                 <div class="p-2">
                                     <a href="https://www.linkedin.com/in/igowthaman/" class="text-light fs-2"
                                         target="_blank">
-                                        <img src="https://static-exp2.licdn.com/sc/h/akt4ae504epesldzj74dzred8"
-                                            class="rounded-4" width="35" alt="">
+                                        <img src="img/linkedin.svg"
+                                            class="rounded-5" width="35" alt="">
                                     </a>
                                 </div>
                                 <div class="p-2">
                                     <a href="https://github.com/igowthaman" class="text-light fs-2" target="_blank">
-                                        <img src="https://github.com/fluidicon.png" width="35" class="rounded-5" alt="">
+                                        <img src="img/github.svg" width="35" class="rounded-5" alt="">
                                     </a>
                                 </div>
                                 <div class="p-2 rounded-4">
                                     <a href="https://www.hackerrank.com/igowthaman" class="text-light fs-2"
                                         target="_blank">
-                                        <img src="https://hrcdn.net/community-frontend/assets/favicon-ddc852f75a.png"
+                                        <img src="img/hackerrank.svg"
                                             class="rounded-5" width="35" alt="">
                                     </a>
                                 </div>
                                 <div class="p-2 rounded-4">
                                     <a href="https://www.codechef.com/users/igowthaman" class="text-light fs-2"
                                         target="_blank">
-                                        <img src="https://cdn.codechef.com/images/cc-logo-mobile-1.svg"
+                                        <img src="img/codechef.svg"
                                             class="rounded-5" width="35" alt="">
                                     </a>
                                 </div>
@@ -135,13 +145,94 @@
                         </div>
                     </div>
                 </div>
+                <div class="m-auto mt-5">
+                    <div class="h2 py-3" id="expertise">Expertise</div>
+                    <div class="px-4">
+                        <div class="py-2">
+                            <div class="h4">
+                                Programming Languages
+                            </div>
+                            <div class="fs-5 ps-4">
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java Script</li>
+                                    <li>C++</li>
+                                    <li>C</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="h4">
+                                Technology
+                            </div>
+                            <div class="fs-5 ps-4">
+                                <ul>
+                                    <li>Flask</li>
+                                    <li>Django</li>
+                                    <li>Flutter</li>
+                                    <li>React</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-auto mt-5">
+                    <div class="h2 py-3" id="experience">Experience</div>
+                    <div class="px-4">
+                        <div class="py-2">
+                            <div class="h4">
+                                Full Stack Developer Intern
+                            </div>
+
+                            <div class="fs-5 ps-2">
+                                Fleksa <span class="fs-6">( Dec 2021 - Apr 2022 )</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-auto mt-5">
+                    <div class="h2 py-3" id="project">Projects</div>
+                    <div class="px-4">
+                        <div class="py-2">
+                            <div class="h5">
+                                <a href="https://github.com/igowthaman/greeny"  target="_blank" class="text-decoration-none text-dark">Google My Business Management System</a>
+                            </div>
+                            <div class="fs-6 ps-3">
+                                Developed using Django and Google My Business API's<br>
+                                Github : <a href="https://github.com/igowthaman/greeny" target="_blank" class="link">https://github.com/igowthaman/greeny</a><br>
+                                Demo : <a href="https://igreeny.pythonanywhere.com" target="_blank" class="link">https://igreeny.pythonanywhere.com</a>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="h5">
+                                <a href="https://github.com/igowthaman/blog" target="_blank" class="text-decoration-none text-dark">Simple Blogging Website</a>
+                            </div>
+                            <div class="fs-6 ps-3">
+                                Developed using Flask and SQLite<br>
+                                Github : <a href="https://github.com/igowthaman/blog" target="_blank" class="link">https://github.com/igowthaman/blog</a><br>
+                                Demo : <a href="https://dailyblog.pythonanywhere.com" target="_blank" class="link">https://dailyblog.pythonanywhere.com</a>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="h5">
+                                <a href="https://github.com/igowthaman/To_Do" target="_blank" class="text-decoration-none text-dark">Simple To Do App</a>
+                            </div>
+                            <div class="fs-6 ps-3">
+                                Developed using Flutter<br>
+                                Github : <a href="https://github.com/igowthaman/To_Do" target="_blank" class="link">https://github.com/igowthaman/To_Do</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="m-auto pb-5 mt-5" id="contact">
                     <div class="h2">Contact</div>
                     <div class="fw-bold ps-4 py-2">
                         <div class="py-2">
                             <a href="mailto:gowthaman.cs20@bitsathy.ac.in" class=" text-decoration-none"
                                 target="_blank">
-                                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" class="rounded-5"
+                                <img src="img/gmail.svg" class="rounded-5"
                                     width="35" alt="">
                                 <span class="text-dark ps-3 link">gowthamanks17@gmail.com</span>
                             </a>
@@ -149,15 +240,15 @@
                         <div class="py-2">
                             <a href="https://www.linkedin.com/in/igowthaman/" class="text-decoration-none"
                                 target="_blank">
-                                <img src="https://static-exp2.licdn.com/sc/h/akt4ae504epesldzj74dzred8"
-                                    class="rounded-4" width="35" alt="">
+                                <img src="img/linkedin.svg"
+                                    class="rounded-5" width="35" alt="">
                                 <span class="text-dark px-3 link">igowthaman</span>
                             </a>
                         </div>
                         <div class="py-2">
                             <a href="https://t.me/gowthamanks" class="text-decoration-none" target="_blank">
-                                <img src="https://web.telegram.org/k/assets/img/android-chrome-192x192.png?v=jw3mK7G9Ry"
-                                    class="rounded-4" width="35" alt="">
+                                <img src="img/telegram.svg"
+                                    class="rounded-5" width="35" alt="">
                                 <span class="text-dark px-3 link">gowthamanks</span>
                             </a>
                         </div>
@@ -168,20 +259,20 @@
                             <div class="d-flex justify-content-center m-auto">
                                 <div class="p-2">
                                     <a href="https://github.com/igowthaman" class="text-light fs-2" target="_blank">
-                                        <img src="https://github.com/fluidicon.png" width="35" class="rounded-5" alt="">
+                                        <img src="img/github.svg" width="35" class="rounded-5" alt="">
                                     </a>
                                 </div>
                                 <div class="p-2 rounded-4">
                                     <a href="https://www.hackerrank.com/igowthaman" class="text-light fs-2"
                                         target="_blank">
-                                        <img src="https://hrcdn.net/community-frontend/assets/favicon-ddc852f75a.png"
+                                        <img src="img/hackerrank.svg"
                                             class="rounded-5" width="35" alt="">
                                     </a>
                                 </div>
                                 <div class="p-2 rounded-4">
                                     <a href="https://www.codechef.com/users/igowthaman" class="text-light fs-2"
                                         target="_blank">
-                                        <img src="https://cdn.codechef.com/images/cc-logo-mobile-1.svg"
+                                        <img src="img/codechef.svg"
                                             class="rounded-5" width="35" alt="">
                                     </a>
                                 </div>
@@ -193,6 +284,15 @@
         </div>
     </div>
     <script>
+        var selected = 'home';
+        function select(name){
+            document.getElementById(selected+"-btn").classList.remove('selected');
+            document.getElementById(selected+"-name").classList.remove('selected');
+            document.getElementById(name+"-btn").classList.add('selected');
+            document.getElementById(name+"-name").classList.add('selected');
+            
+            selected = name;
+        }
     </script>
 </body>
 
