@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <title>Gowthaman</title>
+</head>
+
+<body style="height: 100vh;" class="hide-scroll">
+    <div class="container-fluid h-100 position-relative">
+        <div class="row h-100" >
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 col-md-6 col-9 m-auto text-center order-lg-2">
+                    <img src="./assets/img/contact/contact.png" class="animate__animated animate__backInRight py-5 " style="max-width:100%; max-height:100%;" alt="Experience" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" animate__animated animate__fadeIn animate__delay-1s text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Contact</div>
+                            <div class="d-flex justify-content-center text-center border-bottom border-2">
+                                <a href="https://www.linkedin.com/in/igowthaman" class="btn"  target="_blank"><img src="./assets/img//home/LinkedIn.svg" width="75%"></a>
+                                <a href="https://github.com/igowthaman" class="btn"  target="_blank"><img src="./assets/img/home/GitHub.svg" width="75%"></a>
+                                <a href="https://t.me/gowthamanks" class="btn" target="_blank"><img src="./assets/img/contact/Telegram App.png" width="75%"></a>
+                                <a href="mailto:gowthamanks17@gmail.com" class="btn" target="_blank" title="gowthamanks17@gmail.com"><img src="./assets/img/contact/Gmail.png" width="75%"></a>
+                            </div>
+                            <div class="p-4 mx-lg-5 ">
+                                <form class="form" onsubmit="submitform(this);return false; ">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control rounded-4 border-3 border-dark" id="name" name="name" placeholder="Name" required>
+                                        <label for="floatingInput">Name</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control rounded-4 border-3 border-dark" id="email" name="email" placeholder="Email address" required>
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <textarea class="form-control rounded-4 border-3 border-dark" placeholder="Leave a comment here" id="content" name="content" style="height: 100px" required></textarea>
+                                        <label for="floatingTextarea2">Message</label>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary rounded-4 my-3">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 position-fixed bottom-0 bg-light start-0 py-2 animate__animated animate__fadeIn animate__delay-2s">
+                <div class=" col-lg-5 col-10 m-auto d-flex justify-content-between">
+                    <a href="/" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-house-fill"></i></a>
+                    <a href="./education.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-mortarboard-fill"></i></a>
+                    <a href="./skills.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-puzzle-fill"></i></a>
+                    <a href="./experience.html" class="btn  rounded-4 fs-2 py-1 text-primary"><i class="bi bi-briefcase-fill"></i></a>
+                    <a href="./project.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-folder-fill"></i></a>
+                    <a href="./contact.html" class="btn btn-primary rounded-circle fs-2 py-1"><i class="bi bi-telephone-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function submitform(ele){
+            var fd = new FormData(ele);
+            console.log(fd["name"]);
+            window.location.href = `mailto:dhansekarviji15@gmail.com?subject=${fd.get("name")}&body=${fd.get("content")}`;
+            alert("Thank You For Reaching Out");
+            ele.reset();
+            return true;
+        }
+    </script>
+    
+</body> 
+</html>
