@@ -8,300 +8,284 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Gowthaman</title>
 </head>
 
 <body style="height: 100vh;" class="hide-scroll">
-    <div class="container-fluid h-100">
-        <div class="row animate__animated animate__fadeIn m-auto h-100" id="home">
-            <div class="col-md-9 col-xl-7 col-12 mx-auto mt-5 pt-5 rounded-5 p-2 align-middle position-relative">
-                <div class="row">
-                    <nav class="x position-fixed bottom-0 col-md-9 col-xl-7 col-11 m-auto"
-                        style="background-color:white;">
-                        <div class=" d-flex justify-content-evenly shadow-lg p-1">
-                        </div>
-                        <div class="d-flex justify-content-evenly p-2">
-                            <a class="btn" href="#home" onclick="select('home')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline selected"  id="home-name">Home </span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none selected" id="home-btn">
-                                        home
-                                    </span>
-                                </div>
-                            </a>
-                            <a class="btn" href="#education" onclick="select('education')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline"  id="education-name">Education</span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="education-btn">
-                                        school
-                                    </span>
-                                </div>
-                            </a>
-                            <a class="btn" href="#expertise" onclick="select('expertise')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline" id="expertise-name">Expertise</span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="expertise-btn">
-                                        engineering
-                                    </span>
-                                </div>
-                            </a>
-                            <a class="btn" href="#experience" onclick="select('experience')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline" id="experience-name">Experience</span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="experience-btn">
-                                        work_history
-                                    </span>
-                                </div>
-                            </a>
-                            <a class="btn" href="#project" onclick="select('project')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline"  id="project-name">Project</span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="project-btn">
-                                        collections_bookmark
-                                    </span>
-                                </div>
-                            </a>
-                            <a class="btn" href="#contact" onclick="select('contact')">
-                                <div class="fs-5 fw-bold">
-                                    <span class="d-none d-lg-inline " id="contact-name">Contact</span>
-                                    <span class="material-symbols-outlined d-inline d-lg-none"  id="contact-btn">
-                                        call
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
-                    </nav>
+    <div class="container-fluid h-100 position-relative pt-3">
+        <div class="row h-100 reveal active fadein " id="home">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-4 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/home/home.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
                 </div>
-                <div class="m-auto py-5 px-4 px-md-0 mt-5">
-                    <div class="h2 pb-2">Hi, I'm</div>
-                    <div class="h1 pb-2"> Gowthaman K S</div>
-                    <div class="h5 pb-1">Full Stack Developer</div>
-                    <div class="fs-6 pb-4 text-break border-bottom border-4">
-                        Developer , Programmer and a passionate learner who's always willing to learn and work across
-                        different technologies and domains. Doing my graduation in Bachelor's degree in the stream of
-                        Computer Science and Engineering at Bannari Amman Institute of Technology.
-                    </div>
-                    <div class="pt-3 pb-4 ">
-                        <div class="h5 p-2">
-                            <div class="d-flex justify-content-center m-auto">
-                                <div class="p-2">
-                                    <a href="https://www.linkedin.com/in/igowthaman/" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/linkedin.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2">
-                                    <a href="https://github.com/igowthaman" class="text-light fs-2" target="_blank">
-                                        <img src="img/github.svg" width="35" class="rounded-5" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://www.hackerrank.com/igowthaman" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/hackerrank.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://www.codechef.com/users/igowthaman" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/codechef.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://leetcode.com/igowthaman/" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/leetcode.svg"
-                                            class="rounded-5" width="33" alt="">
-                                    </a>
-                                </div>
-                            </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5 ">
+                    <div class=" reveal active fadein  text-center">
+                        <div class="fs-1 fw-bold">Hey, I'm <br class="d-block d-md-none"> Gowthaman K S</div>
+                        <div class="fs-4 fw-bold py">Software Developer</div>
+                        <div class="fs-5  fw-normal px-1 px-lg-3">
+                            Developer, Programmer and a passionate learner who's 
+                            always willing to learn and work across different 
+                            technologies and domains. Doing my graduation in 
+                            Bachelor's degree in the stream of Computer Science 
+                            and Engineering at Bannari Amman Institute of Technology.
                         </div>
-                    </div>
-                </div>
-                <div class="m-auto mt-5">
-                    <div class="h2 py-3" id="education">Education</div>
-                    <div class="px-4">
-                        <div class="py-2">
-                            <div class="h4">
-                                <span class="d-none d-md-inline">Bachelor of Engineering </span><span
-                                    class="d-inline d-md-none">B.E</span>, Computer Science & Engineering
-                            </div>
-                            <div class="fs-5">
-                                2020 - 2024 <br>
-                                Bannari Amman Institute of Technology, Sathyamangalam , Erode. <br>
-                                CGPA : 9.11
-                            </div>
+                        <div class="border-top border-2 d-flex mt-5 justify-content-center w-100 ">
+                            <a href="https://www.linkedin.com/in/igowthaman" class="btn"  target="_blank"><img src="./assets/img//home/LinkedIn.svg" width="80%"></a>
+                            <a href="https://github.com/igowthaman" class="btn"  target="_blank"><img src="./assets/img/home/GitHub.svg" width="80%"></a>
+                            <a href="https://auth.geeksforgeeks.org/user/gowthamancs20" class="btn" target="_blank"><img src="./assets/img/home/GeeksforGeeks.svg" width="80%"></a>
+                            <a href="https://www.codechef.com/users/igowthaman" class="btn" target="_blank"><img src="./assets/img/home/Codechef.svg" width="80%"></a>
                         </div>
-                        <div class="py-2">
-                            <div class="h4">
-                                Higher Secondary Course
-                            </div>
-                            <div class="fs-5">
-                                2019- 2020 <br>
-                                Kongu Nadu Matriculation Higher Secondary School, Namakkal<br>
-                                Percentage: 84.16%
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-auto mt-5">
-                    <div class="h2 py-3" id="expertise">Expertise</div>
-                    <div class="px-4">
-                        <div class="py-2">
-                            <div class="h4">
-                                Programming Languages
-                            </div>
-                            <div class="fs-5 ps-4">
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Java Script</li>
-                                    <li>C++</li>
-                                    <li>C</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="h4">
-                                Technology
-                            </div>
-                            <div class="fs-5 ps-4">
-                                <ul>
-                                    <li>Flask</li>
-                                    <li>Flutter</li>
-                         
-                                    <li>MySQL</li>
-                                    <li>Git</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-auto mt-5">
-                    <div class="h2 py-3" id="experience">Experience</div>
-                    <div class="px-4">
-                        <div class="py-2">
-                            <div class="h4">
-                                Full Stack Developer Intern
-                            </div>
-
-                            <div class="fs-5 ps-2">
-                                Fleksa <span class="fs-6">( Nov 2021 - Present )</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-auto mt-5">
-                    <div class="h2 py-3" id="project">Projects</div>
-                    <div class="px-4">
-                        <div class="py-2">
-                            <div class="h5">
-                                <a href="https://github.com/gowthaman9462/jumbo_tracking" target="_blank" class="text-decoration-none text-dark">Jumbo Tracking</a>
-                            </div>
-                            <div class="fs-6 ps-3">
-                                Developed using Flutter and SQLite<br>
-                                Github : <a href="https://github.com/gowthaman9462/jumbo_tracking" target="_blank" class="link">https://github.com/gowthaman9462/jumbo_tracking</a><br>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="h5">
-                                <a href="https://github.com/igowthaman/blog" target="_blank" class="text-decoration-none text-dark">Simple Blogging Website</a>
-                            </div>
-                            <div class="fs-6 ps-3">
-                                Developed using Flask and SQLite<br>
-                                Github : <a href="https://github.com/igowthaman/blog" target="_blank" class="link">https://github.com/igowthaman/blog</a><br>
-                                Demo : <a href="https://dailyblog.pythonanywhere.com" target="_blank" class="link">https://dailyblog.pythonanywhere.com</a>
-                            </div>
-                        </div>
-                        <div class="py-2">
-                            <div class="h5">
-                                <a href="https://github.com/igowthaman/To_Do" target="_blank" class="text-decoration-none text-dark">Simple To Do App</a>
-                            </div>
-                            <div class="fs-6 ps-3">
-                                Developed using Flutter<br>
-                                Github : <a href="https://github.com/igowthaman/To_Do" target="_blank" class="link">https://github.com/igowthaman/To_Do</a><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="m-auto pb-5 mt-5" id="contact">
-                    <div class="h2">Contact</div>
-                    <div class="fw-bold ps-4 py-2 border-bottom border-4">
-                        <div class="py-2">
-                            <a href="mailto:gowthaman.cs20@bitsathy.ac.in" class=" text-decoration-none"
-                                target="_blank">
-                                <img src="img/gmail.svg" class="rounded-5"
-                                    width="35" alt="">
-                                <span class="text-dark ps-3 link">gowthamanks17@gmail.com</span>
-                            </a>
-                        </div>
-                        <div class="py-2">
-                            <a href="https://t.me/gowthamanks" class="text-decoration-none" target="_blank">
-                                <img src="img/telegram.svg"
-                                    class="rounded-5" width="35" alt="">
-                                <span class="text-dark px-3 link">gowthamanks</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="h5 p-2">
-                            <div class="d-flex justify-content-center m-auto">
-                                <div class="py-2">
-                                    <a href="https://www.linkedin.com/in/igowthaman/" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/linkedin.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2">
-                                    <a href="https://github.com/igowthaman" class="text-light fs-2" target="_blank">
-                                        <img src="img/github.svg" width="35" class="rounded-5" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://www.hackerrank.com/igowthaman" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/hackerrank.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://www.codechef.com/users/igowthaman" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/codechef.svg"
-                                            class="rounded-5" width="35" alt="">
-                                    </a>
-                                </div>
-                                <div class="p-2 rounded-4">
-                                    <a href="https://leetcode.com/igowthaman/" class="text-light fs-2"
-                                        target="_blank">
-                                        <img src="img/leetcode.svg"
-                                            class="rounded-5" width="33" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="d-lg-none py-5"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row h-100 reveal fadein" id="education">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/edu/edu.png" class="reveal active fade-right py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Education</div>
+                        <ul class="fs-5 text-start fw-normal">
+                            <li>
+                                <strong>B.E, Computer Science & Engineering</strong><br>
+                                2020 - 2024<br>
+                                Bannari Amman Institute of Technology, Erode.<br>
+                                CGPA : 9.11<br>
+                            </li>
+                            <li>
+                                <strong>HSC</strong> <br>
+                                2019 - 2020<br>
+                                Kongu Nadu Matriculation Higher Secondary School, Namakkal.<br>
+                                Percentage: 84.16%<br>
+                            </li>
+                            <li>
+                                <strong>SSLC</strong> <br>
+                                2017 - 2018<br>
+                                Kongu Nadu Matriculation Higher Secondary School, Namakkal.<br>
+                                Percentage: 94.8%<br>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="skills">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/skills/skill.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-6 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-start">
+                        <div class="fs-1 fw-bold mb-2">Programming Language</div>
+                        <div class="d-flex">
+                            <div><img src="./assets/img/skills/C Programming.svg" class=" p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/C++.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Python.svg" class="p-2" width="80%"></div>
+                        </div>
+                        <div class="fs-1 fw-bold mt-3 mb-2">Technology</div>
+                        <div class="d-flex flex-wrap">
+                            <div><img src="./assets/img/skills/Flask.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Bootstrap.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Flutter.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Git.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/MySQL Logo.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/GitHub.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Figma.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Html 5.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/CSS3.svg" class="p-2" width="80%"></div>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="experience">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/experience/experience.png" class="reveal fade-right py-5 " style="max-width:100%; max-height:100%;" alt="Experience" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Experience</div>
+                        <ul class="fs-4 text-start fw-normal" type="none">
+                            <li>
+                                <strong>Fleksa</strong><br>
+                                <ul type="disc" class="fs-5">
+                                    <li >
+                                        <strong>Full Stack Developer</strong><br>
+                                        Part-time<br>
+                                        Jul 2022 - Present
+                                    </li>
+                                    <li>
+                                        <strong>Full Stack Developer Intern</strong><br>
+                                        Intership<br>
+                                        Nov 2021 - Jul 2022
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="project" >
+            <div class="col-lg-11 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/project/project.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2 my-lg-4">Projects</div>
+                        <div class="row mx-4">
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/gowthaman9462/jumbo_tracking" class="card-link">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Jumbo Tracking</h5>
+                                    <p class="card-text">
+                                        <div>Mobile Application to track wildlife animals using SMS.</div>
+                                        <div>
+                                            <span class="badge bg-secondary">Flutter</span> 
+                                            <span class="badge bg-secondary">SQLite</span>
+                                        </div>
+                                    </p>
+                                    <a href="https://github.com/gowthaman9462/jumbo_tracking" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/igowthaman/blog" class="card-link">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Daily Blog</h5>
+                                        <p class="card-text">
+                                            <div>Simple Blogging Website developed using Flask and SQLite</div>
+                                            <div>
+                                                <span class="badge bg-secondary">Flask</span> 
+                                                <span class="badge bg-secondary">Bootstrap</span>
+                                                <span class="badge bg-secondary">SQLite</span>
+                                            </div>
+                                        </p>
+                                        <a href="https://github.com/igowthaman/blog" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/igowthaman/To_Do" class="card-link">
+                                    <div class="card-body">
+                                        <h5 class="card-title">To Do App</h5>
+                                        <p class="card-text">
+                                            <div>Simple To Do mobile application using Flutter and SQLite</div>
+                                            <div>
+                                                <span class="badge bg-secondary">Flutter</span> 
+                                                <span class="badge bg-secondary">SQLite</span>
+                                            </div>
+                                        </p>
+                                        <a href="https://github.com/igowthaman/To_Do" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="contact" >
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/contact/contact.png" class="reveal active fade-right py-5 " style="max-width:100%; max-height:100%;" alt="Experience" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Contact</div>
+                        <div class="d-flex justify-content-center text-center border-bottom border-2">
+                            <a href="https://www.linkedin.com/in/igowthaman" class="btn"  target="_blank"><img src="./assets/img//home/LinkedIn.svg" width="75%"></a>
+                            <a href="https://github.com/igowthaman" class="btn"  target="_blank"><img src="./assets/img/home/GitHub.svg" width="75%"></a>
+                            <a href="https://t.me/gowthamanks" class="btn" target="_blank"><img src="./assets/img/contact/Telegram App.png" width="75%"></a>
+                            <a href="mailto:gowthamanks17@gmail.com" class="btn" target="_blank" title="gowthamanks17@gmail.com"><img src="./assets/img/contact/Gmail.png" width="75%"></a>
+                        </div>
+                        <div class="p-4 mx-lg-5 ">
+                            <form class="form" onsubmit="submitform(this);return false; ">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control rounded-4 border-3 border-dark" id="name" name="name" placeholder="Name" required>
+                                    <label for="floatingInput">Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control rounded-4 border-3 border-dark" id="email" name="email" placeholder="Email address" required>
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control rounded-4 border-3 border-dark" placeholder="Leave a comment here" id="content" name="content" style="height: 100px" required></textarea>
+                                    <label for="floatingTextarea2">Message</label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-outline-primary rounded-4 my-3">Submit</button>
+                            </form>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 position-fixed bottom-0 bg-light start-0 py-2 active fadein">
+            <div class=" col-lg-5 col-10 m-auto d-flex justify-content-between">
+                <a href="#home" id="home-btn" class="btn rounded-4 fs-2 py-1 text-primary active"><i class="bi bi-house-fill"></i></a>
+                <a href="#education" id="education-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-mortarboard-fill"></i></a>
+                <a href="#skills" id="skills-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-puzzle-fill"></i></a>
+                <a href="#experience" id="experience-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-briefcase-fill"></i></a>
+                <a href="#project" id="project-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-folder-fill"></i></a>
+                <a href="#contact" id="contact-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-telephone-fill"></i></a>
+            </div>
+        </div>
     </div>
     <script>
-        var selected = 'home';
-        function select(name){
-            document.getElementById(selected+"-btn").classList.remove('selected');
-            document.getElementById(selected+"-name").classList.remove('selected');
-            document.getElementById(name+"-btn").classList.add('selected');
-            document.getElementById(name+"-name").classList.add('selected');
-            
-            selected = name;
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().y;
+                var elementVisible = 250;
+                if (elementTop > -500 && elementTop < windowHeight-elementVisible) {
+                    reveals[i].classList.add("active");
+                    console.log(reveals[i].getAttribute("id"), elementTop, windowHeight);
+                    if(reveals[i].getAttribute("id")){
+                        select(`${reveals[i].getAttribute("id")}-btn`)
+                    }
+                }
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
         }
+
+        function select(ele){
+            var btns = document.querySelectorAll("a.btn");
+            for (var i = 0; i < btns.length; i++) {
+                if(btns[i].id == ele){
+                    console.log(btns[i].id);
+                    btns[i].classList.add("active");
+                }
+                else{
+                    btns[i].classList.remove("active");
+                }
+            }
+        }
+
+        function submitform(ele){
+            var fd = new FormData(ele);
+            console.log(fd["name"]);
+            window.location.href = `mailto:dhansekarviji15@gmail.com?subject=${fd.get("name")}&body=${fd.get("content")}`;
+            alert("Thank You For Reaching Out");
+            ele.reset();
+            return true;
+        }
+        
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
 
