@@ -249,10 +249,10 @@
             for (var i = 0; i < reveals.length; i++) {
                 var windowHeight = window.innerHeight;
                 var elementTop = reveals[i].getBoundingClientRect().y;
-                var elementVisible = 500;
-                console.log(reveals[i].getAttribute("id"));
-                if (elementTop > -500 && elementTop < windowHeight) {
+                var elementVisible = 250;
+                if (elementTop > -500 && elementTop < windowHeight-elementVisible) {
                     reveals[i].classList.add("active");
+                    console.log(reveals[i].getAttribute("id"), elementTop, windowHeight);
                     if(reveals[i].getAttribute("id")){
                         select(`${reveals[i].getAttribute("id")}-btn`)
                     }
@@ -267,6 +267,7 @@
             var btns = document.querySelectorAll("a.btn");
             for (var i = 0; i < btns.length; i++) {
                 if(btns[i].id == ele){
+                    console.log(btns[i].id);
                     btns[i].classList.add("active");
                 }
                 else{
@@ -274,6 +275,16 @@
                 }
             }
         }
+
+        function submitform(ele){
+            var fd = new FormData(ele);
+            console.log(fd["name"]);
+            window.location.href = `mailto:dhansekarviji15@gmail.com?subject=${fd.get("name")}&body=${fd.get("content")}`;
+            alert("Thank You For Reaching Out");
+            ele.reset();
+            return true;
+        }
+        
         window.addEventListener("scroll", reveal);
     </script>
 </body>
