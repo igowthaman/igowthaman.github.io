@@ -8,22 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css">
     <title>Gowthaman</title>
 </head>
 
 <body style="height: 100vh;" class="hide-scroll">
-    <div class="container-fluid h-100 position-relative">
-        <div class="row h-100" >
+    <div class="container-fluid h-100 position-relative pt-3">
+        <div class="row h-100 reveal active fadein " id="home">
             <div class="col-lg-10 col-12 row m-auto">
-                <div class="col-lg-4 col-md-6 col-9 m-auto text-center">
-                    <img src="./assets/img/home/home.png" class="animate__animated animate__backInLeft py-5 " style="max-width:100%; max-height:100%;" >
+                <div class="col-lg-4 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/home/home.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
                 </div>
-                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
-                    <div class=" animate__animated animate__fadeIn animate__delay-1s text-center">
-                        <div class="fs-1 fw-bold">Hey, I'm Gowthaman K S</div>
-                        <div class="fs-4 fw-bold">Software Developer</div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5 ">
+                    <div class=" reveal active fadein  text-center">
+                        <div class="fs-1 fw-bold">Hey, I'm <br class="d-block d-md-none"> Gowthaman K S</div>
+                        <div class="fs-4 fw-bold py">Software Developer</div>
                         <div class="fs-5  fw-normal px-1 px-lg-3">
                             Developer, Programmer and a passionate learner who's 
                             always willing to learn and work across different 
@@ -41,20 +40,242 @@
                     </div>
                 </div>
             </div>
-            <div class="row w-100 position-fixed bottom-0 bg-light start-0 py-2 animate__animated animate__fadeIn animate__delay-2s">
-                <div class=" col-lg-5 col-10 m-auto d-flex justify-content-between">
-                    <a href="" class="btn btn-primary rounded-circle fs-2 py-1"><i class="bi bi-house-fill"></i></a>
-                    <a href="./education.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-mortarboard-fill"></i></a>
-                    <a href="./skills.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-puzzle-fill"></i></a>
-                    <a href="./experience.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-briefcase-fill"></i></a>
-                    <a href="./project.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-folder-fill"></i></a>
-                    <a href="./contact.html" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-telephone-fill"></i></a>
+        </div>
+        <div class="row h-100 reveal fadein" id="education">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/edu/edu.png" class="reveal active fade-right py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Education</div>
+                        <ul class="fs-5 text-start fw-normal">
+                            <li>
+                                <strong>B.E, Computer Science & Engineering</strong><br>
+                                2020 - 2024<br>
+                                Bannari Amman Institute of Technology, Erode.<br>
+                                CGPA : 9.11<br>
+                            </li>
+                            <li>
+                                <strong>HSC</strong> <br>
+                                2019 - 2020<br>
+                                Kongu Nadu Matriculation Higher Secondary School, Namakkal.<br>
+                                Percentage: 84.16%<br>
+                            </li>
+                            <li>
+                                <strong>SSLC</strong> <br>
+                                2017 - 2018<br>
+                                Kongu Nadu Matriculation Higher Secondary School, Namakkal.<br>
+                                Percentage: 94.8%<br>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+        <div class="row h-100 reveal fadein" id="skills">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/skills/skill.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-6 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-start">
+                        <div class="fs-1 fw-bold mb-2">Programming Language</div>
+                        <div class="d-flex">
+                            <div><img src="./assets/img/skills/C Programming.svg" class=" p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/C++.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Python.svg" class="p-2" width="80%"></div>
+                        </div>
+                        <div class="fs-1 fw-bold mt-3 mb-2">Technology</div>
+                        <div class="d-flex flex-wrap">
+                            <div><img src="./assets/img/skills/Flask.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Bootstrap.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Flutter.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Git.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/MySQL Logo.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/GitHub.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Figma.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/Html 5.svg" class="p-2" width="80%"></div>
+                            <div><img src="./assets/img/skills/CSS3.svg" class="p-2" width="80%"></div>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="experience">
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/experience/experience.png" class="reveal fade-right py-5 " style="max-width:100%; max-height:100%;" alt="Experience" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Experience</div>
+                        <ul class="fs-4 text-start fw-normal" type="none">
+                            <li>
+                                <strong>Fleksa</strong><br>
+                                <ul type="disc" class="fs-5">
+                                    <li >
+                                        <strong>Full Stack Developer</strong><br>
+                                        Part-time<br>
+                                        Jul 2022 - Present
+                                    </li>
+                                    <li>
+                                        <strong>Full Stack Developer Intern</strong><br>
+                                        Intership<br>
+                                        Nov 2021 - Jul 2022
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="project" >
+            <div class="col-lg-11 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center">
+                    <img src="./assets/img/project/project.png" class="reveal active fade-left py-5 " style="max-width:100%; max-height:100%;" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-4">Projects</div>
+                        <div class="row mx-4">
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/gowthaman9462/jumbo_tracking" class="card-link">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Jumbo Tracking</h5>
+                                    <p class="card-text">
+                                        <div>Mobile Application to track wildlife animals using SMS.</div>
+                                        <div>
+                                            <span class="badge bg-secondary">Flutter</span> 
+                                            <span class="badge bg-secondary">SQLite</span>
+                                        </div>
+                                    </p>
+                                    <a href="https://github.com/gowthaman9462/jumbo_tracking" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/igowthaman/blog" class="card-link">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Daily Blog</h5>
+                                        <p class="card-text">
+                                            <div>Simple Blogging Website developed using Flask and SQLite</div>
+                                            <div>
+                                                <span class="badge bg-secondary">Flask</span> 
+                                                <span class="badge bg-secondary">Bootstrap</span>
+                                                <span class="badge bg-secondary">SQLite</span>
+                                            </div>
+                                        </p>
+                                        <a href="https://github.com/igowthaman/blog" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card rounded-5 m-2" style="width: 16rem;">
+                                <a href="https://github.com/igowthaman/To_Do" class="card-link">
+                                    <div class="card-body">
+                                        <h5 class="card-title">To Do App</h5>
+                                        <p class="card-text">
+                                            <div>Simple To Do mobile application using Flutter and SQLite</div>
+                                            <div>
+                                                <span class="badge bg-secondary">Flutter</span> 
+                                                <span class="badge bg-secondary">SQLite</span>
+                                            </div>
+                                        </p>
+                                        <a href="https://github.com/igowthaman/To_Do" class="btn btn-outline-primary rounded-4">GitHub</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 reveal fadein" id="contact" >
+            <div class="col-lg-10 col-12 row m-auto">
+                <div class="col-lg-5 d-none d-lg-block m-auto text-center order-lg-2">
+                    <img src="./assets/img/contact/contact.png" class="reveal active fade-right py-5 " style="max-width:100%; max-height:100%;" alt="Experience" >
+                </div>
+                <div class="col-lg-7 col-11 m-auto h-100 text-start overflow-auto pb-sm-5">
+                    <div class=" reveal active fadein text-center">
+                        <div class="fs-1 text-start fw-bold my-2">Contact</div>
+                        <div class="d-flex justify-content-center text-center border-bottom border-2">
+                            <a href="https://www.linkedin.com/in/igowthaman" class="btn"  target="_blank"><img src="./assets/img//home/LinkedIn.svg" width="75%"></a>
+                            <a href="https://github.com/igowthaman" class="btn"  target="_blank"><img src="./assets/img/home/GitHub.svg" width="75%"></a>
+                            <a href="https://t.me/gowthamanks" class="btn" target="_blank"><img src="./assets/img/contact/Telegram App.png" width="75%"></a>
+                            <a href="mailto:gowthamanks17@gmail.com" class="btn" target="_blank" title="gowthamanks17@gmail.com"><img src="./assets/img/contact/Gmail.png" width="75%"></a>
+                        </div>
+                        <div class="p-4 mx-lg-5 ">
+                            <form class="form" onsubmit="submitform(this);return false; ">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control rounded-4 border-3 border-dark" id="name" name="name" placeholder="Name" required>
+                                    <label for="floatingInput">Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control rounded-4 border-3 border-dark" id="email" name="email" placeholder="Email address" required>
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control rounded-4 border-3 border-dark" placeholder="Leave a comment here" id="content" name="content" style="height: 100px" required></textarea>
+                                    <label for="floatingTextarea2">Message</label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-outline-primary rounded-4 my-3">Submit</button>
+                            </form>
+                        </div>
+                        <div class="d-lg-none py-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 position-fixed bottom-0 bg-light start-0 py-2 active fadein">
+            <div class=" col-lg-5 col-10 m-auto d-flex justify-content-between">
+                <a href="#home" id="home-btn" class="btn rounded-4 fs-2 py-1 text-primary active"><i class="bi bi-house-fill"></i></a>
+                <a href="#education" id="education-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-mortarboard-fill"></i></a>
+                <a href="#skills" id="skills-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-puzzle-fill"></i></a>
+                <a href="#experience" id="experience-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-briefcase-fill"></i></a>
+                <a href="#project" id="project-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-folder-fill"></i></a>
+                <a href="#contact" id="contact-btn" class="btn rounded-4 fs-2 py-1 text-primary"><i class="bi bi-telephone-fill"></i></a>
+            </div>
+        </div>
     </div>
-    
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().y;
+                var elementVisible = 500;
+                console.log(reveals[i].getAttribute("id"));
+                if (elementTop > -500 && elementTop < windowHeight) {
+                    reveals[i].classList.add("active");
+                    if(reveals[i].getAttribute("id")){
+                        select(`${reveals[i].getAttribute("id")}-btn`)
+                    }
+                }
+                else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        function select(ele){
+            var btns = document.querySelectorAll("a.btn");
+            for (var i = 0; i < btns.length; i++) {
+                if(btns[i].id == ele){
+                    btns[i].classList.add("active");
+                }
+                else{
+                    btns[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
 </body>
 
 </html>

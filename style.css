@@ -1,4 +1,6 @@
-
+body{
+    scroll-behavior:auto;
+}
 .bg{
     position: absolute;
 }
@@ -11,10 +13,70 @@ li{
     border-radius: 1rem;
 }
 
+.h-100{
+    min-height: 100% !important;
+    max-height: auto !important;
+}
+
 .rounded-4{
     border-radius: .75rem;
 }
 .card-link{
     text-decoration: none;
     color: black;
+}
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.btn.active{
+    background-color: #0d6efd;
+    color: white !important;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+.active.fadein {
+    animation: fadein 1.5s ease-in;
+}
+
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
